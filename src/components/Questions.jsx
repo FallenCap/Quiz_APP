@@ -98,7 +98,7 @@ const Question = ({ filters }) => {
 
   return (
     <div className="flex flex-col w-screen h-screen place-content-center items-center">
-      <Card className="w-72 sm:w-96 lg:w-2/5 h-72 sm:h-96 lg:h-[27rem] overflow-y-scroll hideScroll">
+      <Card className="w-[22rem] sm:w-96 lg:w-2/5 h-72 sm:h-96 lg:h-[27rem] overflow-y-scroll hideScroll">
         <small className="text-right pt-4 pr-4 text:[10px] sm:text-sm text-green-500 bold">
           {`Correct answers: ${progress}/${filters.noOfQuestions}`}
         </small>
@@ -112,8 +112,8 @@ const Question = ({ filters }) => {
                 return (
                   <div className="pb-2">
                     <p
-                      className=" w-56 lg:w-96 h-auto break-normal text-center text-white bg-gray-400 hover:bg-gray-500 
-                      pt-1 pb-1 pl-2 pr-2 sm:bold text-[10px] sm:text-base md:text-xl rounded-3xl break-all cursor-pointer"
+                      className=" w-60 lg:w-96 h-auto break-normal text-center text-white bg-gray-400 hover:bg-gray-500 
+                      pt-1 pb-1 pl-2 pr-2 sm:bold text-[14px] sm:text-base md:text-xl rounded-3xl break-all cursor-pointer"
                       key={Math.random()}
                       onClick={(e) =>
                         checkAnswer(
